@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Patient Detail &mdash; RSCM</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+
+    <!-- CSS Libraries -->
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="main-wrapper">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <div class="mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li>
+                            <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">Username</div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-title">Logged in 5 min ago</div>
+                            <a href="features-profile.html" class="dropdown-item has-icon">
+                                <i class="far fa-user"></i> Profile
+                            </a>
+                            <a href="features-activities.html" class="dropdown-item has-icon">
+                                <i class="fas fa-bolt"></i> Activities
+                            </a>
+                            <a href="features-settings.html" class="dropdown-item has-icon">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item has-icon text-danger">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="main-sidebar">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <a href="index.html">Stisla</a>
+                    </div>
+                    <div class="sidebar-brand sidebar-brand-sm">
+                        <a href="index.html">St</a>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li class="menu-header">Dashboard</li>
+                        <li class="active">
+                            <a class="nav-link" href="blank.html">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="menu-header">Pages</li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
+                                <i class="fa-solid fa-hospital-user"></i>
+                                <span>Patient</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="patient_list.html">Patient List</a></li>
+                                <li><a class="nav-link" href="create_patient.html">Create Patient</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
+                                <i class="fa-solid fa-user-doctor"></i>
+                                <span>Doctor</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="layout-default.html">Doctor List</a></li>
+                                <li><a class="nav-link" href="layout-transparent.html">Create Doctor</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
+                                <i class="fa-solid fa-notes-medical"></i>
+                                <span>Medical Record</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="../rekammedik/medical_record_list.html">Medical Record
+                                        List</a></li>
+                                <li><a class="nav-link" href="../rekammedik/create_medical_record.html">Create Medical
+                                        Record</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="section">
+                    <div class="section-header">
+                        <h1>Patient Detail <small>/ Detail Pasien</small></h1>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 style="color: black;">Personal Data <small>/ Data Diri</small></h6>
+                                <div class="table-responsive my-4 mx-4">
+                                    <table class="table table-hover table-sm">
+                                        <tr>
+                                            <th>ID Number</th>
+                                            <td>:</td>
+                                            <td>317-4021-2085-30004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Patient's Name</th>
+                                            <td>:</td>
+                                            <td>Harun Al Rasyid / HAR</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Date Of Birth</th>
+                                            <td>:</td>
+                                            <td>8/12/1953</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Phone Number</th>
+                                            <td>:</td>
+                                            <td>81380201946</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ethnic Group</th>
+                                            <td>:</td>
+                                            <td>Betawi</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Come With</th>
+                                            <td>:</td>
+                                            <td>Rujukan</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Health Insurance</th>
+                                            <td>:</td>
+                                            <td>JKN</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Address</th>
+                                            <td>:</td>
+                                            <td>Menteng Atas Seli /39 RT 04/ 12 Setiabudi</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <h6 style="color: black;">Medical Record List <small>/ Daftar Rekam Medis</small></h6>
+                                <div class="table-responsive mt-3">
+                                    <table class="table my-4 table-sm table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">No</th>
+                                                <th scope="col">Medical Record Number</th>
+                                                <th scope="col">Date Of Treatment</th>
+                                                <th scope="col">Hospital Name</th>
+                                                <th scope="col">Service Unit</th>
+                                                <th scope="col">Doctor's Name</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>278-70-34</td>
+                                                <td>1/15/2020</td>
+                                                <td>RSCM</td>
+                                                <td>-</td>
+                                                <td>AGUS RIZAL ARDY HARLANDY HAMID, DR., SPU(K), PHD</td>
+                                                <td>
+                                                    <a href="">Show</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="main-footer">
+                <div class="footer-left">
+                    Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad
+                        Nauval Azhar</a>
+                </div>
+                <div class="footer-right">
+                    2.3.0
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- General JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="../assets/js/stisla.js"></script>
+
+    <!-- JS Libraies -->
+
+    <!-- Template JS File -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+    <!-- Page Specific JS File -->
+</body>
+
+</html>
